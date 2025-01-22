@@ -1,6 +1,36 @@
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    
+    #main-nav .active {
+        background-color: unset;
+    }
+    #main-nav .active a {
+        color: var(--surf);
+    }
+    #main-nav .nav-item a:hover {
+        opacity: 0.68;
+    }
+    .navbar-nav .nav-item {
+        position: relative;
+    }
+    .navbar-nav .nav-item::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        height: 35%;
+        width: 1px;
+        background-color: var(--blue);
+        transform: translateY(-50%);
+    }
+    .navbar-nav .nav-item:last-child::after {
+        display: none; 
+    }
+    .navbar-nav .nav-item:last-child, .navbar-nav .nav-item:last-child a {
+        padding-right: 0;
+    }
+    .nav-outer {
+        clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+    }
 }
         

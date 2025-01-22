@@ -3,3 +3,199 @@
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Main Navigation
+--------------------------------------------------------------*/
+.navbar-toggler {
+    border: none;
+}
+
+#main-nav .active {
+    background-color: var(--surf);
+}
+#main-nav a {
+    color: var(--white);
+    transition: all .3s;
+}
+#main-nav .nav-item a {
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: .8;
+}
+
+#main-nav .nav-item a:hover {
+    opacity: 1;
+}
+
+
+#main-nav .btn {
+    font-size: 18px;
+}
+
+#main-nav .active a {
+     color: #ffffff;
+}
+
+#main-nav .btn {
+    font-size: 18px;
+}
+
+.nav-outer .container {
+    padding: 0;
+}
+
+
+.navbar ul {
+    padding: 0;
+}
+
+.navbar ul li, .site-logo-top, .navbar-toggler, .mobile-search-btn {
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-right: calc(var(--bs-gutter-x) * .5);
+}
+
+.navbar-nav .nav-item, .navbar ul li:first-child:not(.dropdown ul li) {
+    padding: .9rem calc(var(--bs-gutter-x) * .5);
+    border-top: thin solid var(--lightGray);
+}
+
+.navbar a {
+    padding: 0;
+}
+.nav-contact-contain {
+    padding: 0 calc(var(--bs-gutter-x) * .5);
+}
+#main-nav .navbar-nav .nav-item:last-of-type {
+    border-bottom: thin solid var(--lightGray);
+}
+
+/* Collapse Button Mobile */
+.animated-icon {
+    cursor: pointer;
+    height: 20px;
+    margin: 0px;
+    position: relative;
+    width: 30px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+    .animated-icon span {
+        border-radius: 9px;
+        display: block;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        opacity: 1;
+        width: 100%;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+
+    .animated-icon span {
+        background: var(--white);
+    }
+
+        .animated-icon span:nth-child(1) {
+            top: 0px;
+            -webkit-transform-origin: left center;
+            -moz-transform-origin: left center;
+            -o-transform-origin: left center;
+            transform-origin: left center;
+        }
+
+        .animated-icon span:nth-child(2) {
+            top: 10px;
+            -webkit-transform-origin: left center;
+            -moz-transform-origin: left center;
+            -o-transform-origin: left center;
+            transform-origin: left center;
+        }
+
+        .animated-icon span:nth-child(3) {
+            top: 20px;
+            -webkit-transform-origin: left center;
+            -moz-transform-origin: left center;
+            -o-transform-origin: left center;
+            transform-origin: left center;
+        }
+
+    .animated-icon.open span:nth-child(1) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 0px;
+        left: 8px;
+    }
+
+    .animated-icon.open span:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+    }
+
+    .animated-icon.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 21px;
+        left: 8px;
+    }
+
+    #main-nav .logo-top {
+        padding-left: calc(var(--bs-gutter-x)* .5);
+        width: 11rem;
+    }
+
+
+#main-nav .nav-item.active ul {
+    background-color: var(--surf)!important;
+}
+
+#main-nav {
+z-index: 9;
+}
+
+#main-nav .nav-item.active ul li a.dropdown-item.active {
+    color: #ffffff!important;
+}
+#main-nav a#navbarDropdown:hover {
+    color: var(--white)!important;
+}
+
+.top-contact {
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-right: calc(var(--bs-gutter-x) * .5);
+}
+.top-contact a {
+    text-decoration: none;
+    color: var(--white);
+    transition: all .3s;
+}
+
+.top-contact a:hover {
+    color: var(--surf)!important;
+}
+
+.nav-outer {
+    background: rgba(0, 0, 0, 0.95);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+.nav-outer .navbar-bg {
+
+}

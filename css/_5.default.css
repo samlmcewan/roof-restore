@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 #main-nav .nav-item a {
     text-transform: uppercase;
     font-weight: 300;
+    font-size: 1.5rem;
     opacity: 1;
 }
 
@@ -77,9 +78,10 @@ h1, h2, h3, h4, h5, h6 {
 #main-nav .navbar-nav .nav-item:first-of-type{
     margin-top: 1rem;
 }
-#main-nav .navbar-nav .nav-item:last-of-type {
-    border-bottom: thin solid var(--lightGray);
-    margin-bottom: 5em;
+#main-nav .navbar-nav li:last-of-type {
+    /* border-bottom: thin solid var(--lightGray); */
+    /* margin-top: 1rem; */
+    margin-bottom: 3rem;
 }
 
 /* Collapse Button Mobile */
@@ -245,4 +247,8 @@ background: linear-gradient(98deg, rgba(000,000,000,0.7) 0%, rgba(000,000,000,1)
 .top-contact-desktop {
     background: rgb(33,30,32);
     background: linear-gradient(98deg, rgba(000,000,000,0.7) 0%, rgba(000,000,000,1) 80%);
+}
+
+.fb-top {
+    height: 1.65rem;
 }

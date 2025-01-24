@@ -35,6 +35,15 @@
     #main-nav .fb-top {
         margin-top: -.25rem;
     }
+    .hero .hero-text {
+        margin-right: 5rem;
+    }
+    .hero .hero-text h2 {
+        font-size: 7rem;
+    }
+    .hero .hero-text .large {
+        font-size: 9.25rem;
+    }
 
 
     /* #main-nav .navbar-nav li.nav-item {

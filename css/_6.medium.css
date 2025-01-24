@@ -15,4 +15,17 @@
     #main-nav .nav-item a {
         padding-left: 1.5rem;
     }
+    .hero .hero-gradient {
+        background: linear-gradient(98deg, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.7) 80%);
+    }
+    .hero .swiper-slide {
+        padding-top: 20rem;
+        padding-bottom: 8rem;
+    }
+    .hero .hero-text {
+        padding-right: 3rem;
+    }
+    .hero .hero-text h2 {
+        /* font-size: 4rem; */
+    }
 }

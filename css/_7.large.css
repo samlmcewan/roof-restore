@@ -6,4 +6,13 @@
         padding: 0 .5rem;
         letter-spacing: .15em;
     }
+    .hero .hero-text {
+        margin-right: 4rem;
+    }
+    .hero .hero-text h2 {
+        font-size: 6rem;
+    }
+    .hero .hero-text .large {
+        font-size: 7.25rem;
+    }
 }

@@ -4,6 +4,9 @@
     .section-clip {
         clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
     }
+    .section-clip-top {
+        clip-path: polygon(0 22%, 100% 0, 100% 100%, 0% 100%);
+    }
     #main-nav .logo-top {
         padding-left: 1.5rem;
         width: 13rem;
@@ -34,4 +37,9 @@
     .home-card .text-box {
         padding: 1rem 1.5rem;
     }
+    .full-img {
+        height: 50vw;
+    }
+
+  
 }

@@ -4,6 +4,9 @@
     .section-clip {
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
     }
+    .section-clip-top {
+        clip-path: polygon(0 28%, 100% 0, 100% 100%, 0% 100%);
+    }
     #main-nav .active {
         background-color: unset;
     }
@@ -66,5 +69,21 @@
     /* .nav-outer {
         clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
     } */
+    .about {
+        padding-top: 5rem;
+        padding-bottom: 10rem;
+     }
+     .quote h2 {
+        font-size: 3.5rem;
+     }
+     .full-img {
+        height: 35vw;
+    }
+    footer p {
+        font-size: 1.25rem;
+    }
+    footer .contact {
+        margin-bottom: 1rem;
+    }
 }
         

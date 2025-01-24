@@ -76,5 +76,17 @@ const swiper3 = new Swiper('.swiper3', {
   spaceBetween: 5
 });
 
+const swiper4 = new Swiper('.swiper4', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 4000, 
+    disableOnInteraction: false,
+  },
+  slidesPerView: 1,
+  spaceBetween: 15
+});
+
 
 

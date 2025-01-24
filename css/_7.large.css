@@ -27,4 +27,22 @@
     /* .landing-cards-home {
         padding-bottom: 6rem;
     } */
+     .about {
+        padding-top: 7rem;
+        padding-bottom: 9rem;
+     }
+     .quote h2 {
+        font-size: 3rem;
+     }
+     .testimonials.section-clip-top {
+        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+        margin-top: -8rem;
+    }
+    .testimonial-img .quote-author-img {
+        margin-top: 4rem;
+    }
+    .testimonials p {
+        font-size: 1.5rem;
+    }
+
 }

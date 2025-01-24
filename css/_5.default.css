@@ -6,17 +6,58 @@
 body {
     /* font-family: "Libre Franklin", serif; */
     font-family: "Arial", sans-serif;
+    font-size: 1.125rem;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Barlow Condensed", serif;
+    text-transform: uppercase;
 }
+
 .surf {
     color: var(--surf);
 }
 .surfLite {
     color: var(--surfLite);
 }
+.section-clip {
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0% 100%);
+    padding-bottom: 5rem;
+}
+.line-title {
+    position: relative;
+    /* position: relative;
+    display: flex;
+    justify-content: center; */
+}
+.line-title .line:first-child {
+    left: 0;
+}
+.line-title .line-left {
+    position: absolute;
+    height: 3px;
+    background-color: rgba(70, 167, 153, .2);
+    left: 0;
+    right: 0;
+    z-index: -1;
 
+}
+.line-title .title {
+    background-color: var(--white);
+    padding: .25em;
+    width: fit-content;
+    border: 3px solid rgba(70, 167, 153, .2);
+}
+.line-title .title-inner {
+    padding: .5rem 1.75rem;
+    border: 4px solid rgba(70, 167, 153, .2)
+    ;
+}
+.line-title h2 {
+    font-size: 3.5rem;
+    letter-spacing: .2em;
+    color: var(--surf);
+    margin-bottom: 0;
+}
 /*--------------------------------------------------------------
 # Main Navigation
 --------------------------------------------------------------*/
@@ -89,9 +130,7 @@ h1, h2, h3, h4, h5, h6 {
     /* margin-top: 1rem; */
     margin-bottom: 5rem;
 }
-.landing-cards-home {
-    background-color: var(--surf);
-}
+
 /* Collapse Button Mobile */
 .animated-icon {
     cursor: pointer;
@@ -328,18 +367,64 @@ background: linear-gradient(98deg, rgba(000,000,000,0.7) 0%, rgba(000,000,000,1)
     width: 100%;
     height: 100%;
 }
-
-
-/* 
-
-
-.first-section {
-    padding-top: 15rem
-} */
-
 /*--------------------------------------------------------------
 # Landing Cards Home
 --------------------------------------------------------------*/
 .landing-cards-home {
     background-color: var(--surf);
+    padding-bottom: 5rem;
+}
+a.home-card {
+    text-decoration: none;
+}
+
+.home-card .icon-box {
+    width: 30%;
+}
+
+.home-card .icon {
+    width: 100%;
+    height: 100%;
+}
+.home-card .text-box {
+    background-color: rgba(000, 000, 000, .2);
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    border-left: 4px solid var(--surf);
+    transition: all .3s;
+}
+.home-card .text-box h3 {
+    color: var(--white);
+    font-weight: 400;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    letter-spacing: .2em;
+   
+}
+a.home-card .icon-box svg rect {
+    transition: all .3s;
+}
+a.home-card:hover .text-box {
+    background-color: rgba(000, 000, 000, .75);
+}
+a.home-card:hover .icon-box svg rect {
+    fill: rgba(000, 000, 000, .75)!important;
+}
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+.about {
+    padding-top: 3rem;
+    position: relative;
+}
+.about p {
+    font-family: "Barlow Condensed", serif;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.about .img-fluid {
+    width: 100%;
 }

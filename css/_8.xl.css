@@ -1,6 +1,9 @@
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
+    .section-clip {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    }
     #main-nav .active {
         background-color: unset;
     }
@@ -43,6 +46,13 @@
     }
     .hero .hero-text .large {
         font-size: 9.25rem;
+    }
+    .home-card .text-box h3 {
+        font-size: 2.25rem;
+    }
+    .landing-cards-home {
+        padding-top: 5rem!important;
+        padding-bottom: 7rem;
     }
 
 

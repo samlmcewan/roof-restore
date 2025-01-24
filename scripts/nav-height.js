@@ -23,15 +23,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (navbarToggler && navbarBg && navbarCollapse) {
         navbarToggler.addEventListener("click", function () {
+           
             if (count % 2 === 0) {
                 // Menu is about to collapse
                 navbarBg.style.background = "linear-gradient(98deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 1) 80%)";
+                navbarBg.style.clipPath = "polygon(0 0, 100% 0, 100% 80%, 0% 100%)";
             } else {
                 // Menu is about to expand
                 navbarBg.style.background = "linear-gradient(98deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 1) 80%)";
+                navbarBg.style.clipPath = "polygon(0 0, 100% 0, 100% 94%, 0% 100%)";
             }
             count++;
         });
     }
 });
 
+// Align the left lines to titles and stretch to edge of screen 
+document.addEventListener("DOMContentLoaded", function () {
+    // Select all .line-title elements
+    const lineTitles = document.querySelectorAll(".line-title");
+
+    // Loop through each .line-title
+    lineTitles.forEach(lineTitle => {
+        // Calculate the height of the .line-title and divide by 2
+        const lineTitleHeight = lineTitle.offsetHeight;
+        const halfHeight = lineTitleHeight / 2;
+
+        // Get the .line-left inside this .line-title
+        const lineLeft = lineTitle.querySelector(".line-left");
+
+        if (lineLeft) {
+            // Set the 'top' property of .line-left
+            lineLeft.style.top = `${halfHeight}px`;
+
+            // Calculate the distance from the left side of the screen to the .line-title
+            const leftOffset = lineTitle.getBoundingClientRect().left;
+
+            // Set the 'left' and 'width' properties of .line-left
+            lineLeft.style.left = `-${leftOffset}px`;
+            lineLeft.style.width = `${leftOffset}px`;
+        }
+    });
+});
